@@ -1,0 +1,96 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="TD® Travel Medical Insurance">
+      <meta name="author" content="Maxim Pesin">
+      <title>TD Insurance | TD&reg; Travel Medical Insurance</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Thank You Page -->
+    <section class="thank-you">
+      <h2>Thank You!</h2>
+      <p>You're form has been submitted ;)</p>
+      <div class="thank-you-cta">
+        <button id="restart" class="td-button td-button-secondary">Restart</button>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="introduction">
+        <h2>Tell Us About Yourself</h2>
+        <p>Thanks for choosing TD Insurance! In order to safely set up your new accounts and services, please tell us about yourself.</p>
+      </div>
+      <!-- Form Area-->
+      <div class="form">
+        <h2>Personal Information</h2>
+        <!-- Drop Down Selection - Title -->
+        <form action="">
+            <span class="form-error">* Required</span>
+          <select class="form-field input-title">
+            <option value="" disabled selected style="display:none">Title*</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="miss">Miss.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+            <option value="prof">Prof.</option>
+          </select>
+          <!-- Error Message -->
+          <span class="form-error error">* Required</span>
+            <!-- Input Field - First Name -->
+            <input type="text" name="firstname" required="true" placeholder="First Name*" class="form-field input-name-dob">
+            <!-- Input Field - Middle Name -->
+            <input type="text" name="middlename" required="true" placeholder="Middle Initial" class="form-field input-name-dob">
+          <!-- Error Message -->
+          <span class="form-error error">* Required</span>
+            <!-- Input Field - Last Name -->
+            <input type="text" name="lastname" required="true" placeholder="Last Name*" class="form-field input-last-name">
+          <!-- Error Message -->
+          <span class="form-error">* Required</span>
+            <!-- Input Field - Email address -->
+            <input type="text" name="email" required="true" placeholder="Email address*" class="form-field input-email">
+          <!-- Tooltip -->
+          <div class="tooltip first-tip">?
+            <span class="tooltiptext">Enter a valid Email address</span>
+          </div>
+          <!-- Error Message -->
+          <span class="form-error error dob">* Required</span>
+            <!-- Input Field - Date of Birth -->
+            <input type="text" name="dob" required="true" onfocus="(this.type='date')" placeholder="Date of Birth*" class="form-field input-name-dob">
+          <!-- Error Message -->
+          <span class="form-error error">* Required</span>
+            <!-- Input Field - Social Insurance Number -->
+            <input type="text" name="sin" required="true" maxlength="9" placeholder="Social Insurance Number*" class="form-field input-sin">
+          <!-- Tooltip -->
+          <div class="tooltip">?
+            <span class="tooltiptext">Enter a valid Social Insurance Number. 9 Character limit.</span>
+          </div>
+        </form>
+        <!-- Submit & Cancel CTA -->
+        <div class="form-cta">
+          <button class="td-button td-button-primary">Cancel</button>
+          <button id="submit" class="td-button td-button-secondary">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- See more coverage section -->
+    <section class="side-pane">
+      <h3>You are applying for:</h3>
+      <h2 style="margin-top: 30px;">TD<sup>&reg;</sup> Travel Medical Insurance</h2>
+      <button class="td-button td-button-secondary td-button-full">See More Coverage Options</button>
+    </section>
+
+    <!-- JQUERY External script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Custom Local script-->
+    <script src="script.js"></script>
+
+  </body>
+</html>

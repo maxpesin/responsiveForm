@@ -1,0 +1,334 @@
+@font-face {
+  font-family: Webly Sleek SemiLight;
+  src: url(weblysleekuisl.ttf);
+}
+body {
+  background-color: #F4F7F4;
+  max-width: 1200px;
+  /*width: 100%;*/
+  margin: auto;
+  font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+  color: #1a5336;
+}
+:focus {
+  outline: dotted;
+  outline-width: 1px;
+}
+.main-content {
+  width:calc(72% - 60px);
+  float: left;
+  padding: 0 20px 0 40px;
+}
+.side-pane {
+  width: calc(28% - 60px);
+  float:left;
+  padding: 0 40px 0 20px;
+}
+section {
+  line-height: 1.417;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1c1c1c;
+}
+/* -- FORM STYLES -- */
+select {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  background-color: white !important;
+  background: url(Feather-arrows-chevron-down.svg) no-repeat 100% 50%;
+  background-position-x: 90%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select:hover {
+  background: url(Feather-arrows-chevron-down-active.svg) no-repeat 100% 50%;
+  background-position-x: 90%;
+}
+input {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1c1c1c;
+}
+.form-field {
+  position: relative;
+  border: 2px solid;
+  border-color: #DFDFE3;
+  border-top: none;
+  color:rgb(107, 107, 107);
+  padding: 7px 0 7px 7px;
+  animation: outputHover 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes outputHover{
+  from { 
+    border-bottom-color: rgb(0, 138, 0);
+    }
+  to {
+    border-bottom-color: #DFDFE3;
+  }
+}
+.form-field:focus,
+.form-field:hover {
+  animation: inputHover 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes inputHover{
+  from { 
+    border-bottom-color: #DFDFE3;
+    }
+  to {
+  border-bottom-color: rgb(0, 138, 0);
+  }
+}
+.input-title {
+  width: 14%;
+  margin-right: 2%;
+}
+.input-name-dob {
+  width: 19%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.input-sin {
+  width: 30%;
+  margin-left: 2%;
+}
+.input-last-name {
+  width: 34%;
+  margin-left: 2%;
+}
+.input-email {
+  width: 35%;
+}
+/* -- BUTTON CTA -- */
+.td-button {
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 4px 8px 4px 8px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+  font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;
+}
+.td-button-full {
+  width: 100%;
+}
+.td-button-primary {
+  color: #fff;
+  background-color:#C55415;
+  border-color: #C55415;
+}
+.td-button-primary:hover {
+  background-color:  #ae4a13;
+  border-color: #ae4a13;
+}
+.td-button-secondary {
+  color: #fff;
+  background-color:#00A221;
+  border-color: #00A221;
+}
+.td-button-secondary:hover {
+  background-color:  #008a00;
+  border-color: #008a00;
+}
+/* -- TOOLTIP -- */
+.first-tip {
+  margin-right: 2%;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  border: #008a00 1px solid;
+  border-radius: 100%;
+  height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #008a00;
+  cursor: pointer;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 178px;
+  background-color: white;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px grey;
+  position: absolute;
+  z-index: 1;
+  top: 27px;
+  left: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.form-error { 
+  visibility: hidden;
+  position: absolute;
+  font-size: 14px;
+  color: red;
+}
+.error {
+  margin-left: 15px;
+}
+.form-cta {
+  float:right;
+  margin-top:60px;
+}
+.form-cta button {
+  margin-right: 15px;
+}
+.thank-you {
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.thank-you-cta {
+  width: 100%;
+  margin-top: 40px;
+}
+.thank-you p {
+  text-align: center;
+}
+/* -- MEDIA QUERIES -- */
+@media screen and (max-width: 1023px) {
+  body {
+    text-align: center;
+    width: 100%;
+  }
+  .main-content {
+    width: calc(100% - 30px);
+    padding: 0 15px 0 15px;
+    margin: auto;
+    float: none;
+  }
+  .side-pane {
+    width: calc(100% - 30px);
+    padding: 0 15px 0 15px;
+    margin: 200px auto auto auto;
+    float: none;
+  }
+  .form-cta {
+    float: right;
+    margin-top: 40px;
+  }
+  .form-cta button {
+    margin-right: 15px;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+  }
+  p {
+    text-align: left;
+  }
+  .input-title {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .input-name-dob {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .input-sin {
+    float: left;
+    width: 93%;
+    margin-left: 0;
+  }
+  .input-last-name {
+    width: 100%;
+    margin-left: 0;
+  }
+  .input-email {
+    float: left;
+    width: 93%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+  option {
+    font-size: 1em;
+  }
+/* -- BUTTON CTA -- */
+  .td-button-full {
+    max-width: 800px;
+    margin-bottom: 60px;
+  }
+  .td-button {
+    padding: 0.6em 1em 0.6em 1em;
+    font-size: 1em;
+    line-height: 1em;
+  }
+  /* -- TOOLTIP -- */
+  .first-tip {
+    margin-right: 0;
+  }
+  .tooltip {
+    margin-top: 40px;
+    font-size: 0.8em;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .tooltiptext {
+    left: -200px;
+    top: 2em;
+    width: 200px;
+    font-size: 1em;
+  }
+  select {
+    background-position-x: 95%;
+  }
+  select:hover {
+    background-position-x: 95%;
+  }
+
+  /* -- ERROR -- */
+  .form-error { 
+    display: block;
+  }
+  .error {
+    margin-left: 0;
+  }
+  .dob {
+    margin-top: 28px;
+  }
+}
